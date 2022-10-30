@@ -13,7 +13,7 @@ export function Header() {
       <HeaderLogo>
         <Link to="/">
           <h1>Campeonato Brasileiro 2022</h1>
-          <img src="./liga.png" alt="logo" height="40" width="40"></img>
+          <img src="./liga.png" alt="logo" height="80" width="100"></img>
         </Link>
       </HeaderLogo>
       <HeaderButtons>

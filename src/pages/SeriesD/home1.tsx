@@ -1,17 +1,17 @@
 import { Link } from 'react-router-dom';
 import { CardDiv} from './style';
 
-export function Home() {
+export function Home1() {
   return (
     <CardDiv>
         <div>
         <Link to="/seriea">
-        <img src="./BrasileiroSerieA.png" alt="logo" ></img>
+        <img src="./grupo1.png" alt="logo" ></img>
         </Link>
         </div>
         <div>
         <Link to="/serieb">
-        <img src="./BrasileiroSerieB.png" alt="logo" ></img>
+        <img src="./grupo2.png" alt="logo" ></img>
         </Link>
         </div>
         <div>
