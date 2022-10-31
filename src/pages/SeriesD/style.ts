@@ -9,7 +9,7 @@ export const CardDiv = styled.div`
   align-items: center;
   div{
     display: flex;
-    margin: 2% 10% 2% 10%;
+    margin: 2% 1% 2% 1%;
     background: linear-gradient(45deg,#00000038,transparent);
   }
   img {
