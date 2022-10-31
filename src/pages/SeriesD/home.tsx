@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { CardDiv} from './style';
 
-export function Home1() {
+export function HomeSerieD() {
   return (
     <CardDiv>
         <div>
