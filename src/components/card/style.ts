@@ -35,4 +35,8 @@ export const Buttons = styled.button<ButtonColor>`
   height: 25px;
   border-radius: 10px;
   color: white;
+  a {
+    text-decoration: none;
+    color: white;
+  }
 `;

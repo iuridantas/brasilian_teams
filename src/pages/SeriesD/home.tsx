@@ -1,8 +1,12 @@
 import { Link } from 'react-router-dom';
+import { BaseSeriesD } from '../../components/base/baseseriesd';
+import { TopSeriesD } from '../../components/top/topseriesd';
 import { CardDiv} from './style';
 
 export function HomeSerieD() {
   return (
+    <>
+    <TopSeriesD />
     <CardDiv>
         <div>
         <Link to="/seriedgrupo1">
@@ -45,5 +49,7 @@ export function HomeSerieD() {
         </Link>
         </div>
     </CardDiv>
+    <BaseSeriesD/>
+    </>
   );
 }

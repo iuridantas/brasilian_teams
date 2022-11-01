@@ -52,24 +52,24 @@ export function Card({
 
   return (
     <CardSection>
-      <h2>{name}</h2>
-      <img src={shield} alt={name} height="100" width="100"></img>
-      <h3>Fundação: {foundation}</h3>
-      <h3>Mascote: {mascot}</h3>
-      <h3>Localização: {localization}</h3>
-      <ButtonsDiv>
-        <Buttons
-          color="blue"
-          onClick={() => {
-            navigate('/update/' + _id);
-          }}
-        >
-          Editar
-        </Buttons>
-        <Buttons color="red" onClick={DeleteCard}>
-          Deletar
-        </Buttons>
-      </ButtonsDiv>
+        <h2>{name}</h2>
+        <img src={shield} alt={name} height="100" width="100"></img>
+        <h3>Fundação: {foundation}</h3>
+        <h3>Mascote: {mascot}</h3>
+        <h3>Localização: {localization}</h3>
+        <ButtonsDiv>
+          <Buttons
+            color="blue"
+            onClick={() => {
+              navigate('/update/' + _id);
+            }}
+          >
+            Editar
+          </Buttons>
+          <Buttons color="red" onClick={DeleteCard}>
+            Deletar
+          </Buttons>
+        </ButtonsDiv>
     </CardSection>
   );
 }

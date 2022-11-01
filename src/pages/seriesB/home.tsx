@@ -4,6 +4,7 @@ import { CardListDiv } from './style';
 import { useEffect, useState } from 'react';
 import { Teams } from '../../utils/types/times.type';
 import { TopSeriesB } from '../../components/top/topseriesb';
+import { BaseSeriesB } from '../../components/base/baseseriesb';
 
 export function HomeSerieB() {
   const [teams, setTeams] = useState<Teams[]>([]);
@@ -39,6 +40,7 @@ export function HomeSerieB() {
           />
         );
       })}
+      <BaseSeriesB/>
     </CardListDiv>
   );
 }

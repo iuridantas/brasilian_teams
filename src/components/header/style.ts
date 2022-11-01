@@ -32,6 +32,7 @@ export const HeaderButtons = styled.section`
   align-items: center;
   button {
     border: none;
+    border-radius: 10px;
     cursor: pointer;
     background-color: rgba(207,181,59, 0.6);
     padding: 10px;

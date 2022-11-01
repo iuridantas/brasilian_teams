@@ -4,6 +4,7 @@ import { CardListDiv } from './style';
 import { useEffect, useState } from 'react';
 import { Teams } from '../../../utils/types/times.type';
 import { TopSeriesDGroup4 } from '../../../components/top/topseriesdgroup4';
+import { BaseSeriesDGroup4 } from '../../../components/base/baseseriesdgroup4';
 
 export function HomeSerieDGroup4() {
   const [teams, setTeams] = useState<Teams[]>([]);
@@ -24,7 +25,7 @@ export function HomeSerieDGroup4() {
 
   return (
     <CardListDiv>
-      <TopSeriesDGroup4/>
+      <TopSeriesDGroup4 />
       {teams.map((teams) => {
         return (
           <Card
@@ -39,6 +40,7 @@ export function HomeSerieDGroup4() {
           />
         );
       })}
+      <BaseSeriesDGroup4 />
     </CardListDiv>
   );
 }

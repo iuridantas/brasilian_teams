@@ -4,6 +4,7 @@ import { CardListDiv } from './style';
 import { useEffect, useState } from 'react';
 import { Teams } from '../../../utils/types/times.type';
 import { TopSeriesDGroup8 } from '../../../components/top/topseriesdgroup8';
+import { BaseSeriesDGroup8 } from '../../../components/base/baseseriesdgroup8';
 
 export function HomeSerieDGroup8() {
   const [teams, setTeams] = useState<Teams[]>([]);
@@ -39,6 +40,7 @@ export function HomeSerieDGroup8() {
           />
         );
       })}
+      <BaseSeriesDGroup8 />
     </CardListDiv>
   );
 }
