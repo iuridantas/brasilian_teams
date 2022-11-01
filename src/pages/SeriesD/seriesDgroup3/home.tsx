@@ -3,6 +3,7 @@ import { api } from '../../../utils/api/api';
 import { CardListDiv } from './style';
 import { useEffect, useState } from 'react';
 import { Teams } from '../../../utils/types/times.type';
+import { TopSeriesDGroup3 } from '../../../components/top/topseriesdgroup3';
 
 export function HomeSerieDGroup3() {
   const [teams, setTeams] = useState<Teams[]>([]);
@@ -23,6 +24,7 @@ export function HomeSerieDGroup3() {
 
   return (
     <CardListDiv>
+      <TopSeriesDGroup3/>
       {teams.map((teams) => {
         return (
           <Card
