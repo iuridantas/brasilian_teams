@@ -17,6 +17,18 @@ import { HomeSerieDGroup5 } from "./pages/seriesD/seriesDgroup5/home";
 import { HomeSerieDGroup6 } from "./pages/seriesD/seriesDgroup6/home";
 import { HomeSerieDGroup7 } from "./pages/seriesD/seriesDgroup7/home";
 import { HomeSerieDGroup8 } from "./pages/seriesD/seriesDgroup8/home";
+import { CreateseriesA } from "./pages/creatteams/createseriesA";
+import { CreateseriesB } from "./pages/creatteams/createseriesB";
+import { CreateseriesC } from "./pages/creatteams/createseriesC";
+import { CreateseriesDGroup1 } from "./pages/creatteams/createseriesDgroup1";
+import { CreateseriesDGroup2 } from "./pages/creatteams/createseriesDgroup2";
+import { CreateseriesDGroup3 } from "./pages/creatteams/createseriesDgroup3";
+import { CreateseriesDGroup4 } from "./pages/creatteams/createseriesDgroup4";
+import { CreateseriesDGroup5 } from "./pages/creatteams/createseriesDgroup5";
+import { CreateseriesDGroup7 } from "./pages/creatteams/createseriesDgroup7";
+import { CreateseriesDGroup6 } from "./pages/creatteams/createseriesDgroup6";
+import { CreateseriesDGroup8 } from "./pages/creatteams/createseriesDgroup8";
+
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
@@ -37,6 +49,17 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
         <Route path="/seriedgrupo6" element={<HomeSerieDGroup6 />} />
         <Route path="/seriedgrupo7" element={<HomeSerieDGroup7 />} />
         <Route path="/seriedgrupo8" element={<HomeSerieDGroup8 />} />
+        <Route path="/cadastrartimeserieA" element={<CreateseriesA />} />
+        <Route path="/cadastrartimeserieB" element={<CreateseriesB />} />
+        <Route path="/cadastrartimeserieC" element={<CreateseriesC />} />
+        <Route path="/cadastrartimeserieDgrupo1" element={<CreateseriesDGroup1 />} />
+        <Route path="/cadastrartimeserieDgrupo2" element={<CreateseriesDGroup2 />} />
+        <Route path="/cadastrartimeserieDgrupo3" element={<CreateseriesDGroup3 />} />
+        <Route path="/cadastrartimeserieDgrupo4" element={<CreateseriesDGroup4 />} />
+        <Route path="/cadastrartimeserieDgrupo5" element={<CreateseriesDGroup5 />} />
+        <Route path="/cadastrartimeserieDgrupo6" element={<CreateseriesDGroup6 />} />
+        <Route path="/cadastrartimeserieDgrupo7" element={<CreateseriesDGroup7 />} />
+        <Route path="/cadastrartimeserieDgrupo8" element={<CreateseriesDGroup8 />} />
       </Routes>
       <Footer />
     </BrowserRouter>
