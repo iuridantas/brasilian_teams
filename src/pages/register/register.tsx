@@ -1,7 +1,7 @@
 import { useState, FormEvent } from 'react';
 import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai';
 import { useNavigate } from 'react-router-dom';
-import { api } from '../../utils/api/api';
+import { api } from '../../utils/api/apiLogin';
 import { RegisterSection, PasswordDiv, ButtonSection } from './style';
 
 type viewPasswords = {

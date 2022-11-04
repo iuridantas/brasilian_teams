@@ -1,5 +1,5 @@
 import { Card } from '../../components/card/cardseriec';
-import { api } from '../../utils/api/api';
+import { api } from '../../utils/api/apiSeriec';
 import { CardListDiv } from './style';
 import { useEffect, useState } from 'react';
 import { Teams } from '../../utils/types/times.type';

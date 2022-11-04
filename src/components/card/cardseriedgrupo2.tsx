@@ -1,5 +1,5 @@
 import { Teams } from '../../utils/types/times.type';
-import { api } from '../../utils/api/api';
+import { api } from '../../utils/api/apiSeriedGroup2';
 import { CardSection, ButtonsDiv, Buttons } from './style';
 import swal from 'sweetalert';
 import { useNavigate } from 'react-router-dom';

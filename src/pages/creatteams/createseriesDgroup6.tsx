@@ -2,7 +2,7 @@ import { FormEvent, useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { Teams, TeamsInput } from '../../utils/types/times.type';
 import { ContentDiv } from './style';
-import { api } from '../../utils/api/api';
+import { api } from '../../utils/api/apiSeriedGroup6';
 
 export function CreateseriesDGroup6() {
   const navigate = useNavigate();
