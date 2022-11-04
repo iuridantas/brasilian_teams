@@ -32,6 +32,26 @@ export function Header() {
         <div>
         <button onClick={() => {navigate("/login");}}>Login</button>
         </div>
+        <div>
+        {localStorage.getItem('token') ? (
+            <button
+              onClick={() => {
+                localStorage.removeItem('token');
+                navigate('/');
+              }}
+            >
+              Logout
+            </button>
+          ) : (
+            <button
+              onClick={() => {
+                navigate('/register');
+              }}
+            >
+              Cadastro
+            </button>
+          )}
+        </div>
       </HeaderButtons>
     </HeaderComponent>
   );

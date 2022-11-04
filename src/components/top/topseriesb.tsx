@@ -10,7 +10,8 @@ export function TopSeriesB() {
           <h2>Campeonato Brasileiro Serie B</h2>
       </HeaderLogo>
       <HeaderButtons>
-        <div>
+      <div>
+        {localStorage.getItem('token') ? (
           <button
             onClick={() => {
               navigate('/cadastrartimeserieB');
@@ -18,6 +19,7 @@ export function TopSeriesB() {
           >
             Cadastrar Time
           </button>
+          ) : null}
         </div>
       </HeaderButtons>
     </HeaderComponent>

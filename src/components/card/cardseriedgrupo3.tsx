@@ -58,17 +58,21 @@ export function Card({
       <h3>Mascote: {mascot}</h3>
       <h3>Localização: {localization}</h3>
       <ButtonsDiv>
-        <Buttons
-          color="blue"
-          onClick={() => {
-            navigate('/update/' + _id);
-          }}
-        >
-          Editar
-        </Buttons>
-        <Buttons color="red" onClick={DeleteCard}>
-          Deletar
-        </Buttons>
+      {localStorage.getItem('token') ? (
+          <Buttons
+            color="blue"
+            onClick={() => {
+              navigate('/seried/grupo3/update/' + _id);
+            }}
+          >
+            Editar
+          </Buttons>
+          ) : null}
+           {localStorage.getItem('token') ? (
+          <Buttons color="red" onClick={DeleteCard}>
+            Deletar
+          </Buttons>
+          ) : null}
       </ButtonsDiv>
     </CardSection>
   );

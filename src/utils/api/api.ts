@@ -60,7 +60,7 @@ export const api = {
   },
   getTeamsSerieDGroup1: async (): Promise<Teams[] | undefined> => {
     try {
-      const teams = await axios.get('/Seried/Grupo1');
+      const teams = await axios.get('/seried/grupo1');
       return teams.data;
     } catch (err: any) {
       handleError(
@@ -71,7 +71,7 @@ export const api = {
   },
   getTeamsSerieDGroup2: async (): Promise<Teams[] | undefined> => {
     try {
-      const teams = await axios.get('/Seried/Grupo2');
+      const teams = await axios.get('/seried/grupo2');
       return teams.data;
     } catch (err: any) {
       handleError(
@@ -82,7 +82,7 @@ export const api = {
   },
   getTeamsSerieDGroup3: async (): Promise<Teams[] | undefined> => {
     try {
-      const teams = await axios.get('/Seried/Grupo3');
+      const teams = await axios.get('/seried/grupo3');
       return teams.data;
     } catch (err: any) {
       handleError(
@@ -93,7 +93,7 @@ export const api = {
   },
   getTeamsSerieDGroup4: async (): Promise<Teams[] | undefined> => {
     try {
-      const teams = await axios.get('/Seried/Grupo4');
+      const teams = await axios.get('/seried/grupo4');
       return teams.data;
     } catch (err: any) {
       handleError(
@@ -104,7 +104,7 @@ export const api = {
   },
   getTeamsSerieDGroup5: async (): Promise<Teams[] | undefined> => {
     try {
-      const teams = await axios.get('/Seried/Grupo5');
+      const teams = await axios.get('/seried/grupo5');
       return teams.data;
     } catch (err: any) {
       handleError(
@@ -115,7 +115,7 @@ export const api = {
   },
   getTeamsSerieDGroup6: async (): Promise<Teams[] | undefined> => {
     try {
-      const teams = await axios.get('/Seried/Grupo6');
+      const teams = await axios.get('/seried/grupo6');
       return teams.data;
     } catch (err: any) {
       handleError(
@@ -126,7 +126,7 @@ export const api = {
   },
   getTeamsSerieDGroup7: async (): Promise<Teams[] | undefined> => {
     try {
-      const teams = await axios.get('/Seried/Grupo7');
+      const teams = await axios.get('/seried/grupo7');
       return teams.data;
     } catch (err: any) {
       handleError(
@@ -137,7 +137,7 @@ export const api = {
   },
   getTeamsSerieDGroup8: async (): Promise<Teams[] | undefined> => {
     try {
-      const teams = await axios.get('/Seried/Grupo8');
+      const teams = await axios.get('/seried/grupo8');
       return teams.data;
     } catch (err: any) {
       handleError(
@@ -189,7 +189,7 @@ export const api = {
     teamId: string,
   ): Promise<boolean | undefined> => {
     try {
-      const isDeleted = await axios.delete('/Seried/Grupo1/delete/' + teamId);
+      const isDeleted = await axios.delete('/seried/grupo1/delete/' + teamId);
       if (isDeleted.status === 200) {
         return true;
       }
@@ -204,7 +204,7 @@ export const api = {
     teamId: string,
   ): Promise<boolean | undefined> => {
     try {
-      const isDeleted = await axios.delete('/Seried/Grupo2/delete/' + teamId);
+      const isDeleted = await axios.delete('/seried/grupo2/delete/' + teamId);
       if (isDeleted.status === 200) {
         return true;
       }
@@ -219,7 +219,7 @@ export const api = {
     teamId: string,
   ): Promise<boolean | undefined> => {
     try {
-      const isDeleted = await axios.delete('/Seried/Grupo3/delete/' + teamId);
+      const isDeleted = await axios.delete('/seried/grupo3/delete/' + teamId);
       if (isDeleted.status === 200) {
         return true;
       }
@@ -234,7 +234,7 @@ export const api = {
     teamId: string,
   ): Promise<boolean | undefined> => {
     try {
-      const isDeleted = await axios.delete('/Seried/Grupo4/delete/' + teamId);
+      const isDeleted = await axios.delete('/seried/grupo4/delete/' + teamId);
       if (isDeleted.status === 200) {
         return true;
       }
@@ -249,7 +249,7 @@ export const api = {
     teamId: string,
   ): Promise<boolean | undefined> => {
     try {
-      const isDeleted = await axios.delete('/Seried/Grupo5/delete/' + teamId);
+      const isDeleted = await axios.delete('/seried/grupo5/delete/' + teamId);
       if (isDeleted.status === 200) {
         return true;
       }
@@ -264,7 +264,7 @@ export const api = {
     teamId: string,
   ): Promise<boolean | undefined> => {
     try {
-      const isDeleted = await axios.delete('/Seried/Grupo6/delete/' + teamId);
+      const isDeleted = await axios.delete('/seried/grupo6/delete/' + teamId);
       if (isDeleted.status === 200) {
         return true;
       }
@@ -279,7 +279,7 @@ export const api = {
     teamId: string,
   ): Promise<boolean | undefined> => {
     try {
-      const isDeleted = await axios.delete('/Seried/Grupo7/delete/' + teamId);
+      const isDeleted = await axios.delete('/seried/grupo7/delete/' + teamId);
       if (isDeleted.status === 200) {
         return true;
       }
@@ -294,7 +294,7 @@ export const api = {
     teamId: string,
   ): Promise<boolean | undefined> => {
     try {
-      const isDeleted = await axios.delete('/Seried/Grupo8/delete/' + teamId);
+      const isDeleted = await axios.delete('/seried/grupo8/delete/' + teamId);
       if (isDeleted.status === 200) {
         return true;
       }
@@ -334,7 +334,7 @@ export const api = {
   },
   creatTeamSerieDGroup1: async (teams: TeamsInput): Promise<Teams | undefined> => {
     try {
-      const newTeam = await axios.post('/Seried/Grupo1/create', teams);
+      const newTeam = await axios.post('/seried/grupo1/create', teams);
       return newTeam.data;
     } catch (err: any) {
       console.log(err);
@@ -343,7 +343,7 @@ export const api = {
   },
   creatTeamSerieDGroup2: async (teams: TeamsInput): Promise<Teams | undefined> => {
     try {
-      const newTeam = await axios.post('/Seried/Grupo2/create', teams);
+      const newTeam = await axios.post('/seried/grupo2/create', teams);
       return newTeam.data;
     } catch (err: any) {
       console.log(err);
@@ -352,7 +352,7 @@ export const api = {
   },
   creatTeamSerieDGroup3: async (teams: TeamsInput): Promise<Teams | undefined> => {
     try {
-      const newTeam = await axios.post('/Seried/Grupo3/create', teams);
+      const newTeam = await axios.post('/seried/grupo3/create', teams);
       return newTeam.data;
     } catch (err: any) {
       console.log(err);
@@ -361,7 +361,7 @@ export const api = {
   },
   creatTeamSerieDGroup4: async (teams: TeamsInput): Promise<Teams | undefined> => {
     try {
-      const newTeam = await axios.post('/Seried/Grupo4/create', teams);
+      const newTeam = await axios.post('/seried/grupo4/create', teams);
       return newTeam.data;
     } catch (err: any) {
       console.log(err);
@@ -370,7 +370,7 @@ export const api = {
   },
   creatTeamSerieDGroup5: async (teams: TeamsInput): Promise<Teams | undefined> => {
     try {
-      const newTeam = await axios.post('/Seried/Grupo5/create', teams);
+      const newTeam = await axios.post('/seried/grupo5/create', teams);
       return newTeam.data;
     } catch (err: any) {
       console.log(err);
@@ -379,7 +379,7 @@ export const api = {
   },
   creatTeamSerieDGroup6: async (teams: TeamsInput): Promise<Teams | undefined> => {
     try {
-      const newTeam = await axios.post('/Seried/Grupo6/create', teams);
+      const newTeam = await axios.post('/seried/grupo6/create', teams);
       return newTeam.data;
     } catch (err: any) {
       console.log(err);
@@ -388,7 +388,7 @@ export const api = {
   },
   creatTeamSerieDGroup7: async (teams: TeamsInput): Promise<Teams | undefined> => {
     try {
-      const newTeam = await axios.post('/Seried/Grupo7/create', teams);
+      const newTeam = await axios.post('/seried/grupo7/create', teams);
       return newTeam.data;
     } catch (err: any) {
       console.log(err);
@@ -397,7 +397,7 @@ export const api = {
   },
   creatTeamSerieDGroup8: async (teams: TeamsInput): Promise<Teams | undefined> => {
     try {
-      const newTeam = await axios.post('/Seried/Grupo8/create', teams);
+      const newTeam = await axios.post('/seried/grupo8/create', teams);
       return newTeam.data;
     } catch (err: any) {
       console.log(err);
@@ -439,7 +439,7 @@ export const api = {
   },
   getTeamSerieDGroup1ById: async (teamId: string): Promise<Teams | undefined> => {
     try {
-      const teams = await axios.get('/Seried/Grupo1/find/' + teamId);
+      const teams = await axios.get('/seried/grupo1/find/' + teamId);
       return teams.data;
     } catch (err) {
       handleError(
@@ -450,7 +450,7 @@ export const api = {
   },
   getTeamSerieDGroup2ById: async (teamId: string): Promise<Teams | undefined> => {
     try {
-      const teams = await axios.get('/Seried/Grupo2/find/' + teamId);
+      const teams = await axios.get('/seried/grupo2/find/' + teamId);
       return teams.data;
     } catch (err) {
       handleError(
@@ -461,7 +461,7 @@ export const api = {
   },
   getTeamSerieDGroup3ById: async (teamId: string): Promise<Teams | undefined> => {
     try {
-      const teams = await axios.get('/Seried/Grupo3/find/' + teamId);
+      const teams = await axios.get('/seried/grupo3/find/' + teamId);
       return teams.data;
     } catch (err) {
       handleError(
@@ -472,7 +472,7 @@ export const api = {
   },
   getTeamSerieDGroup4ById: async (teamId: string): Promise<Teams | undefined> => {
     try {
-      const teams = await axios.get('/Seried/Grupo4/find/' + teamId);
+      const teams = await axios.get('/seried/grupo4/find/' + teamId);
       return teams.data;
     } catch (err) {
       handleError(
@@ -483,7 +483,7 @@ export const api = {
   },
   getTeamSerieDGroup5ById: async (teamId: string): Promise<Teams | undefined> => {
     try {
-      const teams = await axios.get('/Seried/Grupo5/find/' + teamId);
+      const teams = await axios.get('/seried/grupo5/find/' + teamId);
       return teams.data;
     } catch (err) {
       handleError(
@@ -494,7 +494,7 @@ export const api = {
   },
   getTeamSerieDGroup6ById: async (teamId: string): Promise<Teams | undefined> => {
     try {
-      const teams = await axios.get('/Seried/Grupo6/find/' + teamId);
+      const teams = await axios.get('/seried/grupo6/find/' + teamId);
       return teams.data;
     } catch (err) {
       handleError(
@@ -505,7 +505,7 @@ export const api = {
   },
   getTeamSerieDGroup7ById: async (teamId: string): Promise<Teams | undefined> => {
     try {
-      const teams = await axios.get('/Seried/Grupo7/find/' + teamId);
+      const teams = await axios.get('/seried/grupo7/find/' + teamId);
       return teams.data;
     } catch (err) {
       handleError(
@@ -516,7 +516,7 @@ export const api = {
   },
   getTeamSerieDGroup8ById: async (teamId: string): Promise<Teams | undefined> => {
     try {
-      const teams = await axios.get('/Seried/Grupo8/find/' + teamId);
+      const teams = await axios.get('/seried/grupo8/find/' + teamId);
       return teams.data;
     } catch (err) {
       handleError(
@@ -561,7 +561,7 @@ export const api = {
   updateTeamSerieDGroup1: async (teams: Teams): Promise<Teams | undefined> => {
     try {
       const updatedTeams = await axios.patch(
-        '/Seried/Grupo1/update/' + teams._id,
+        '/seried/grupo1/update/' + teams._id,
         teams,
       );
       return updatedTeams.data;
@@ -572,7 +572,7 @@ export const api = {
   updateTeamSerieDGroup2: async (teams: Teams): Promise<Teams | undefined> => {
     try {
       const updatedTeams = await axios.patch(
-        '/Seried/Grupo2/update/' + teams._id,
+        '/seried/grupo2/update/' + teams._id,
         teams,
       );
       return updatedTeams.data;
@@ -583,7 +583,7 @@ export const api = {
   updateTeamSerieDGroup3: async (teams: Teams): Promise<Teams | undefined> => {
     try {
       const updatedTeams = await axios.patch(
-        '/Seried/Grupo3/update/' + teams._id,
+        '/seried/grupo3/update/' + teams._id,
         teams,
       );
       return updatedTeams.data;
@@ -594,7 +594,7 @@ export const api = {
   updateTeamSerieDGroup4: async (teams: Teams): Promise<Teams | undefined> => {
     try {
       const updatedTeams = await axios.patch(
-        '/Seried/Grupo4/update/' + teams._id,
+        '/seried/grupo4/update/' + teams._id,
         teams,
       );
       return updatedTeams.data;
@@ -605,7 +605,7 @@ export const api = {
   updateTeamSerieDGroup5: async (teams: Teams): Promise<Teams | undefined> => {
     try {
       const updatedTeams = await axios.patch(
-        '/Seried/Grupo5/update/' + teams._id,
+        '/seried/grupo5/update/' + teams._id,
         teams,
       );
       return updatedTeams.data;
@@ -616,7 +616,7 @@ export const api = {
   updateTeamSerieDGroup6: async (teams: Teams): Promise<Teams | undefined> => {
     try {
       const updatedTeams = await axios.patch(
-        '/Seried/Grupo6/update/' + teams._id,
+        '/seried/grupo6/update/' + teams._id,
         teams,
       );
       return updatedTeams.data;
@@ -627,7 +627,7 @@ export const api = {
   updateTeamSerieDGroup7: async (teams: Teams): Promise<Teams | undefined> => {
     try {
       const updatedTeams = await axios.patch(
-        '/Seried/Grupo7/update/' + teams._id,
+        '/seried/grupo7/update/' + teams._id,
         teams,
       );
       return updatedTeams.data;
@@ -638,7 +638,7 @@ export const api = {
   updateTeamSerieDGroup8: async (teams: Teams): Promise<Teams | undefined> => {
     try {
       const updatedTeams = await axios.patch(
-        '/Seried/Grupo8/update/' + teams._id,
+        '/seried/grupo8/update/' + teams._id,
         teams,
       );
       return updatedTeams.data;
@@ -646,4 +646,16 @@ export const api = {
       handleError('Erro ao atualizar o produto', err.response.data.message[0]);
     }
   },
+  signIn: async (loginData: SignIn): Promise<LoginResponse | undefined> => {
+    try {
+      const login = await axios.post('/auth/login', loginData);
+      localStorage.setItem('token', login.data.token);
+      return login.data;
+    }catch (err:any){
+      handleError(
+        'Email ou senha incorretos tente novamente',
+        err.response.data.message[0],
+      );
+    }
+  }
 };

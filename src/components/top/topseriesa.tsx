@@ -11,6 +11,7 @@ export function TopSeriesA() {
       </HeaderLogo>
       <HeaderButtons>
         <div>
+        {localStorage.getItem('token') ? (
           <button
             onClick={() => {
               navigate('/cadastrartimeserieA');
@@ -18,6 +19,7 @@ export function TopSeriesA() {
           >
             Cadastrar Time
           </button>
+          ) : null}
         </div>
       </HeaderButtons>
     </HeaderComponent>

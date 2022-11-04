@@ -35,7 +35,15 @@ export function TopSeriesDGroup5() {
         <button onClick={() => {navigate("/seriedgrupo8");}}>Grupo 8</button>
         </div>
         <div>
-          <button onClick={() => {navigate('/cadastrartimeserieDgrupo5');}}> Cadastrar Time </button>
+        {localStorage.getItem('token') ? (
+          <button
+            onClick={() => {
+              navigate('/cadastrartimeserieDgrupo5');
+            }}
+          >
+            Cadastrar Time
+          </button>
+          ) : null}
         </div>
       </HeaderButtons>
     </HeaderComponent>
