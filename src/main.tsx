@@ -29,6 +29,7 @@ import { CreateseriesDGroup7 } from './pages/creatteams/createseriesDgroup7';
 import { CreateseriesDGroup6 } from './pages/creatteams/createseriesDgroup6';
 import { CreateseriesDGroup8 } from './pages/creatteams/createseriesDgroup8';
 import { Login } from './pages/login/login';
+import Register from './pages/register/register';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
@@ -85,6 +86,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
           element={<CreateseriesDGroup8 />}
         />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
       <Footer />
     </BrowserRouter>

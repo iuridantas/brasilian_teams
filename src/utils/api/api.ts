@@ -646,6 +646,14 @@ export const api = {
       handleError('Erro ao atualizar o produto', err.response.data.message[0]);
     }
   },
+  registerUser:async (user:UserInput): Promise<User | undefined> => {
+    try {
+      const userCreate = await axios.post('/users/create', user);
+      return userCreate.data;
+    } catch (err: any) {
+      handleError('Erro ao registrar o usuário', err.response.data.message[0]);
+    }
+  },
   signIn: async (loginData: SignIn): Promise<LoginResponse | undefined> => {
     try {
       const login = await axios.post('/auth/login', loginData);
