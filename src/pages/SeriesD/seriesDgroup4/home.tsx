@@ -1,4 +1,4 @@
-import { Card } from '../../../components/card/cardseriedgrupo1';
+import { Card } from '../../../components/card/cardseriedgrupo4';
 import { api } from '../../../utils/api/apiSeriedGroup4';
 import { CardListDiv } from './style';
 import { useEffect, useState } from 'react';
