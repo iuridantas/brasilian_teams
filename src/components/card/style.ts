@@ -10,8 +10,11 @@ export const CardSection = styled.section`
   border-radius: 15px;
   margin: 2% 1% 2% 1%;
   background: linear-gradient(45deg, black, transparent);
+  h2 {
+    font-size: 1.3rem;
+  }
   h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 `;
 

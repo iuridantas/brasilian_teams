@@ -7,8 +7,6 @@ import {
   
   axios.defaults.baseURL = 'https://api-teamsbrazilian2022.herokuapp.com/';
   axios.defaults.headers.post['Content-Type'] = 'application/json';
-  axios.defaults.headers.common['Authorization'] =
-    'Bearer ' + localStorage.getItem('token');
   
   function handleError(text: string, description: string) {
     swal({
@@ -22,7 +20,7 @@ import {
   export const api = {
     getTeamsSerieDGroup5: async (): Promise<Teams[] | undefined> => {
       try {
-        const teams = await axios.get('/seried/grupo5');
+        const teams = await axios.get('/seried/grupo5', {headers:{'Authorization':'Bearer ' + localStorage.getItem('token')}});
         return teams.data;
       } catch (err: any) {
         handleError(
@@ -35,7 +33,7 @@ import {
       teamId: string,
     ): Promise<boolean | undefined> => {
       try {
-        const isDeleted = await axios.delete('/seried/grupo5/delete/' + teamId);
+        const isDeleted = await axios.delete('/seried/grupo5/delete/' + teamId, {headers:{'Authorization':'Bearer ' + localStorage.getItem('token')}});
         if (isDeleted.status === 200) {
           return true;
         }
@@ -48,7 +46,7 @@ import {
     },
     creatTeamSerieDGroup5: async (teams: TeamsInput): Promise<Teams | undefined> => {
       try {
-        const newTeam = await axios.post('/seried/grupo5/create', teams);
+        const newTeam = await axios.post('/seried/grupo5/create', teams, {headers:{'Authorization':'Bearer ' + localStorage.getItem('token')}});
         return newTeam.data;
       } catch (err: any) {
         console.log(err);
@@ -57,7 +55,7 @@ import {
     },
     getTeamSerieDGroup5ById: async (teamId: string): Promise<Teams | undefined> => {
       try {
-        const teams = await axios.get('/seried/grupo5/find/' + teamId);
+        const teams = await axios.get('/seried/grupo5/find/' + teamId, {headers:{'Authorization':'Bearer ' + localStorage.getItem('token')}});
         return teams.data;
       } catch (err) {
         handleError(
@@ -70,7 +68,7 @@ import {
       try {
         const updatedTeams = await axios.patch(
           '/seried/grupo5/update/' + teams._id,
-          teams,
+          teams, {headers:{'Authorization':'Bearer ' + localStorage.getItem('token')}}
         );
         return updatedTeams.data;
       } catch (err: any) {

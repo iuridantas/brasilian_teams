@@ -87,6 +87,17 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
         />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path='/seriea/update/:_id' element={<CreateseriesA />} />
+        <Route path='/serieb/update/:_id' element={<CreateseriesB />} />
+        <Route path='/seriec/update/:_id' element={<CreateseriesC />} />
+        <Route path='/seried/grupo1/update/:_id' element={<CreateseriesDGroup1 />} />
+        <Route path='/seried/grupo2/update/:_id' element={<CreateseriesDGroup2 />} />
+        <Route path='/seried/grupo3/update/:_id' element={<CreateseriesDGroup3 />} />
+        <Route path='/seried/grupo4/update/:_id' element={<CreateseriesDGroup4 />} />
+        <Route path='/seried/grupo5/update/:_id' element={<CreateseriesDGroup5 />} />
+        <Route path='/seried/grupo6/update/:_id' element={<CreateseriesDGroup6 />} />
+        <Route path='/seried/grupo7/update/:_id' element={<CreateseriesDGroup7 />} />
+        <Route path='/seried/grupo8/update/:_id' element={<CreateseriesDGroup8 />} />
       </Routes>
       <Footer />
     </BrowserRouter>

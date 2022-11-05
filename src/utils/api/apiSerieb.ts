@@ -7,8 +7,6 @@ import {
   
   axios.defaults.baseURL = 'https://api-teamsbrazilian2022.herokuapp.com/';
   axios.defaults.headers.post['Content-Type'] = 'application/json';
-  axios.defaults.headers.common['Authorization'] =
-    'Bearer ' + localStorage.getItem('token');
   
   function handleError(text: string, description: string) {
     swal({
@@ -22,7 +20,7 @@ import {
   export const api = {
     getTeamsSerieB: async (): Promise<Teams[] | undefined> => {
       try {
-        const teams = await axios.get('/serieb');
+        const teams = await axios.get('/serieb', {headers:{'Authorization':'Bearer ' + localStorage.getItem('token')}});
         return teams.data;
       } catch (err: any) {
         handleError(
@@ -33,7 +31,7 @@ import {
     },
     deleteTeamSerieB: async (teamId: string): Promise<boolean | undefined> => {
       try {
-        const isDeleted = await axios.delete('/serieb/delete/' + teamId);
+        const isDeleted = await axios.delete('/serieb/delete/' + teamId, {headers:{'Authorization':'Bearer ' + localStorage.getItem('token')}});
         if (isDeleted.status === 200) {
           return true;
         }
@@ -46,7 +44,7 @@ import {
     },
     creatTeamSerieB: async (teams: TeamsInput): Promise<Teams | undefined> => {
       try {
-        const newTeam = await axios.post('/serieb/create', teams);
+        const newTeam = await axios.post('/serieb/create', teams, {headers:{'Authorization':'Bearer ' + localStorage.getItem('token')}});
         return newTeam.data;
       } catch (err: any) {
         console.log(err);
@@ -55,7 +53,7 @@ import {
     },
     getTeamSerieBById: async (teamId: string): Promise<Teams | undefined> => {
       try {
-        const teams = await axios.get('/serieb/find/' + teamId);
+        const teams = await axios.get('/serieb/find/' + teamId, {headers:{'Authorization':'Bearer ' + localStorage.getItem('token')}});
         return teams.data;
       } catch (err) {
         handleError(
@@ -68,7 +66,7 @@ import {
       try {
         const updatedTeams = await axios.patch(
           '/serieb/update/' + teams._id,
-          teams,
+          teams, {headers:{'Authorization':'Bearer ' + localStorage.getItem('token')}}
         );
         return updatedTeams.data;
       } catch (err: any) {
