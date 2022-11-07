@@ -9,3 +9,10 @@ export const CardListDiv = styled.div`
   justify-content: space-evenly;
   align-items: center;
 `;
+
+export const Load = styled.div`
+  h1 {
+    font-size: 2rem;
+    color: black;
+  }
+`;
