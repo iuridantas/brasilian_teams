@@ -26,28 +26,33 @@ export function HomeSerieA() {
     getTeamsInfo();
   }, [control]);
 
-  return (<>
-    {loading ? (
-      <Load> <h1>loading...</h1></Load>
-    ) :(
-    <CardListDiv>
-      <TopSeriesA/>
-      {teams.map((teams) => {
-        return (
-          <Card
-            key={teams._id}
-            _id={teams._id}
-            name={teams.name}
-            shield={teams.shield}
-            foundation={teams.foundation}
-            mascot={teams.mascot}
-            localization={teams.localization}
-            updatePage={updatePage}
-          />
-        );
-      })}
-      <BaseSeriesA/>
-    </CardListDiv>
-  )}
-  </>);
+  return (
+    <>
+      {loading ? (
+        <Load>
+          {' '}
+          <h1>loading...</h1>
+        </Load>
+      ) : (
+        <CardListDiv>
+          <TopSeriesA />
+          {teams.map((teams) => {
+            return (
+              <Card
+                key={teams._id}
+                _id={teams._id}
+                name={teams.name}
+                shield={teams.shield}
+                foundation={teams.foundation}
+                mascot={teams.mascot}
+                localization={teams.localization}
+                updatePage={updatePage}
+              />
+            );
+          })}
+          <BaseSeriesA />
+        </CardListDiv>
+      )}
+    </>
+  );
 }

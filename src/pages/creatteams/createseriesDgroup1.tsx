@@ -1,11 +1,12 @@
 import { FormEvent, useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { Teams, TeamsInput } from '../../utils/types/times.type';
-import { ContentDiv } from './style';
+import { ContentDiv, Load } from './style';
 import { api } from '../../utils/api/apiSeriedGroup1';
 
 export function CreateseriesDGroup1() {
   const navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
   const [teams, setTeams] = useState<Teams>();
   const { _id } = useParams();
 
@@ -21,6 +22,7 @@ export function CreateseriesDGroup1() {
   }
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    setLoading(true);
     e.preventDefault();
     const newTeam: TeamsInput = {
       name: e.currentTarget.teamsName.value,
@@ -37,6 +39,7 @@ export function CreateseriesDGroup1() {
       console.log(TeamResponse);
     } else {
       TeamResponse = await api.creatTeamSerieDGroup1(newTeam);
+      setLoading(false);
     }
 
     if (TeamResponse) {
@@ -45,6 +48,13 @@ export function CreateseriesDGroup1() {
   }
 
   return (
+    <>
+    {loading ? (
+      <Load>
+        {' '}
+        <h1>loading...</h1>
+      </Load>
+    ) : (
     <ContentDiv>
       <h2>{_id ? 'Atualizar Time' : 'Cadastro de Time'}</h2>
       <form onSubmit={handleSubmit}>
@@ -88,5 +98,7 @@ export function CreateseriesDGroup1() {
         </section>
       </form>
     </ContentDiv>
-  );
-}
+      )}
+      </>
+    );
+  }

@@ -66,7 +66,7 @@ import {
       try {
         const updatedTeams = await axios.patch(
           '/serieb/update/' + teams._id,
-          teams, {headers:{'Authorization':'Bearer ' + localStorage.getItem('token')}}
+          teams,{headers:{'Authorization':'Bearer ' + localStorage.getItem('token')}}
         );
         return updatedTeams.data;
       } catch (err: any) {

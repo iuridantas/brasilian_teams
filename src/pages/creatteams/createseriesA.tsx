@@ -1,5 +1,4 @@
 import { FormEvent, useState, useEffect } from 'react';
-import logo from '../../../public/logo.svg';
 import { useNavigate, useParams } from 'react-router-dom';
 import { Teams, TeamsInput } from '../../utils/types/times.type';
 import { ContentDiv, Load } from './style';
@@ -51,7 +50,10 @@ export function CreateseriesA() {
   return (
     <>
       {loading ? (
-        <Load> <h1>loading...</h1></Load>
+        <Load>
+          {' '}
+          <h1>loading...</h1>
+        </Load>
       ) : (
         <ContentDiv>
           <h2>{_id ? 'Atualizar Time' : 'Cadastro de Time'}</h2>

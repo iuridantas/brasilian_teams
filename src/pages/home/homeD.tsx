@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom';
 import { BaseSeriesD } from '../../components/base/baseseriesd';
 import { TopSeriesD } from '../../components/top/topseriesd';
-import { CardDiv} from './style';
+import { CardDiv1} from './style';
 
 export function HomeSerieD() {
   return (
     <>
     <TopSeriesD />
-    <CardDiv>
+    <CardDiv1>
         <div>
         <Link to="/seriedgrupo1">
         <img src="./grupo1.png" alt="logo" ></img>
@@ -48,7 +48,7 @@ export function HomeSerieD() {
         <img src="./grupo8.png" alt="logo" ></img>
         </Link>
         </div>
-    </CardDiv>
+    </CardDiv1>
     <BaseSeriesD/>
     </>
   );

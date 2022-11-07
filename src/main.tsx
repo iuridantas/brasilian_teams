@@ -3,20 +3,20 @@ import ReactDOM from 'react-dom/client';
 import { Footer } from './components/footer/footer';
 import { Header } from './components/header/header';
 import { Home } from './pages/home/home';
-import { HomeSerieD } from './pages/seriesD/home';
+import { HomeSerieD } from './pages/home/homeD';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import GlobalStyle from './styles/global';
-import { HomeSerieA } from './pages/seriesA/home';
-import { HomeSerieB } from './pages/seriesB/home';
-import { HomeSerieC } from './pages/seriesC/home';
-import { HomeSerieDGroup1 } from './pages/seriesD/seriesDgroup1/home';
-import { HomeSerieDGroup2 } from './pages/seriesD/seriesDgroup2/home';
-import { HomeSerieDGroup3 } from './pages/seriesD/seriesDgroup3/home';
-import { HomeSerieDGroup4 } from './pages/seriesD/seriesDgroup4/home';
-import { HomeSerieDGroup5 } from './pages/seriesD/seriesDgroup5/home';
-import { HomeSerieDGroup6 } from './pages/seriesD/seriesDgroup6/home';
-import { HomeSerieDGroup7 } from './pages/seriesD/seriesDgroup7/home';
-import { HomeSerieDGroup8 } from './pages/seriesD/seriesDgroup8/home';
+import { HomeSerieA } from './pages/home/homeA';
+import { HomeSerieB } from './pages/home/homeB';
+import { HomeSerieC } from './pages/home/homeC';
+import { HomeSerieDGroup1 } from './pages/home/homeD1';
+import { HomeSerieDGroup2 } from './pages/home/homeD2';
+import { HomeSerieDGroup3 } from './pages/home/homeD3';
+import { HomeSerieDGroup4 } from './pages/home/homeD4';
+import { HomeSerieDGroup5 } from './pages/home/homeD5';
+import { HomeSerieDGroup6 } from './pages/home/homeD6';
+import { HomeSerieDGroup7 } from './pages/home/homeD7';
+import { HomeSerieDGroup8 } from './pages/home/homeD8';
 import { CreateseriesA } from './pages/creatTeams/createseriesA';
 import { CreateseriesB } from './pages/creatTeams/createseriesB';
 import { CreateseriesC } from './pages/creatTeams/createseriesC';
@@ -87,17 +87,41 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
         />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path='/seriea/update/:_id' element={<CreateseriesA />} />
-        <Route path='/serieb/update/:_id' element={<CreateseriesB />} />
-        <Route path='/seriec/update/:_id' element={<CreateseriesC />} />
-        <Route path='/seried/grupo1/update/:_id' element={<CreateseriesDGroup1 />} />
-        <Route path='/seried/grupo2/update/:_id' element={<CreateseriesDGroup2 />} />
-        <Route path='/seried/grupo3/update/:_id' element={<CreateseriesDGroup3 />} />
-        <Route path='/seried/grupo4/update/:_id' element={<CreateseriesDGroup4 />} />
-        <Route path='/seried/grupo5/update/:_id' element={<CreateseriesDGroup5 />} />
-        <Route path='/seried/grupo6/update/:_id' element={<CreateseriesDGroup6 />} />
-        <Route path='/seried/grupo7/update/:_id' element={<CreateseriesDGroup7 />} />
-        <Route path='/seried/grupo8/update/:_id' element={<CreateseriesDGroup8 />} />
+        <Route path="/seriea/update/:_id" element={<CreateseriesA />} />
+        <Route path="/serieb/update/:_id" element={<CreateseriesB />} />
+        <Route path="/seriec/update/:_id" element={<CreateseriesC />} />
+        <Route
+          path="/seried/grupo1/update/:_id"
+          element={<CreateseriesDGroup1 />}
+        />
+        <Route
+          path="/seried/grupo2/update/:_id"
+          element={<CreateseriesDGroup2 />}
+        />
+        <Route
+          path="/seried/grupo3/update/:_id"
+          element={<CreateseriesDGroup3 />}
+        />
+        <Route
+          path="/seried/grupo4/update/:_id"
+          element={<CreateseriesDGroup4 />}
+        />
+        <Route
+          path="/seried/grupo5/update/:_id"
+          element={<CreateseriesDGroup5 />}
+        />
+        <Route
+          path="/seried/grupo6/update/:_id"
+          element={<CreateseriesDGroup6 />}
+        />
+        <Route
+          path="/seried/grupo7/update/:_id"
+          element={<CreateseriesDGroup7 />}
+        />
+        <Route
+          path="/seried/grupo8/update/:_id"
+          element={<CreateseriesDGroup8 />}
+        />
       </Routes>
       <Footer />
     </BrowserRouter>
