@@ -66,7 +66,7 @@ import {
     },
     updateTeamSerieDGroup7: async (teams: Teams): Promise<Teams | undefined> => {
       try {
-        const updatedTeams = await axios.patch(
+        const updatedTeams = await axios.put(
           '/seried/grupo7/update/' + teams._id,
           teams, {headers:{'Authorization':'Bearer ' + localStorage.getItem('token')}}
         );
