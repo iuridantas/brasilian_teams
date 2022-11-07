@@ -5,7 +5,7 @@ export const HeaderComponent = styled.header`
   width: 100%;
   justify-content: space-between;
   padding: 10px;
-  background-color: rgba(192,192,192);
+  background-color: rgba(192, 192, 192);
 `;
 
 export const HeaderLogo = styled.section`
@@ -34,7 +34,7 @@ export const HeaderButtons = styled.section`
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    background-color: rgba(207,181,59, 0.6);
+    background-color: rgba(207, 181, 59, 0.6);
     padding: 10px;
     color: white;
     margin: 0px 5px 0px 5px;

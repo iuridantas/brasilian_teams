@@ -5,30 +5,29 @@ import { api } from '../../utils/api/apiLogin';
 import { RegisterSection, PasswordDiv, ButtonSection } from './style';
 
 type viewPasswords = {
-    password: boolean;
-    confirmPassword: boolean;
+  password: boolean;
+  confirmPassword: boolean;
 };
 
 export default function Register() {
+  const [viewPassword, setViewPassword] = useState<viewPasswords>({
+    password: false,
+    confirmPassword: false,
+  });
 
-    const [viewPassword, setViewPassword] = useState<viewPasswords>({
-        password: false,
-        confirmPassword: false,
-      });
-    
-      const navigate = useNavigate();
-    
-      async function handleSubmit(event: FormEvent<HTMLFormElement>) {
-        event.preventDefault();
+  const navigate = useNavigate();
 
-        const newUser = {
-            name: event.currentTarget.userName.value,
-            username: event.currentTarget.userName.value,
-            email: event.currentTarget.email.value,
-            password: event.currentTarget.password.value,
-            photo: event.currentTarget.image.value,
-        };
-        const user = await api.registerUser(newUser);
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    const newUser = {
+      name: event.currentTarget.userName.value,
+      username: event.currentTarget.userName.value,
+      email: event.currentTarget.email.value,
+      password: event.currentTarget.password.value,
+      photo: event.currentTarget.image.value,
+    };
+    const user = await api.registerUser(newUser);
     console.log(user);
     if (user) {
       navigate('/login');
@@ -76,4 +75,3 @@ export default function Register() {
     </RegisterSection>
   );
 }
-

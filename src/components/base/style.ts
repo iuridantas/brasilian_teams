@@ -5,7 +5,7 @@ export const HeaderComponent = styled.section`
   width: 90%;
   justify-content: flex-end;
   padding: 10px;
-  background-color: rgba(207,181,59,0);
+  background-color: rgba(207, 181, 59, 0);
 `;
 
 export const HeaderButtons = styled.section`
@@ -17,7 +17,7 @@ export const HeaderButtons = styled.section`
     border-radius: 10px;
     /* font-size: 20px; */
     cursor: pointer;
-    background-color: rgba(192,192,192);
+    background-color: rgba(192, 192, 192);
     padding: 10px;
     color: white;
     margin: 0px 5px 0px 5px;

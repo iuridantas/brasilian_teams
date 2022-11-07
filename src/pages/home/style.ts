@@ -7,10 +7,10 @@ export const CardDiv = styled.div`
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  div{
+  div {
     display: flex;
     margin: 2% 10% 2% 10%;
-    background: linear-gradient(45deg,#00000038,transparent);
+    background: linear-gradient(45deg, #00000038, transparent);
   }
   img {
     width: 300px;
@@ -26,10 +26,10 @@ export const CardDiv1 = styled.div`
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  div{
+  div {
     display: flex;
     margin: 2% 1% 2% 1%;
-    background: linear-gradient(45deg,#00000038,transparent);
+    background: linear-gradient(45deg, #00000038, transparent);
   }
   img {
     width: 300px;
@@ -49,7 +49,7 @@ export const CardListDiv = styled.div`
 `;
 
 export const Load = styled.div`
-  h1{
+  h1 {
     font-size: 2rem;
     color: black;
   }

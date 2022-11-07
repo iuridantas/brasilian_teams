@@ -7,18 +7,18 @@ export function TopSeriesA() {
   return (
     <HeaderComponent>
       <HeaderLogo>
-          <h2>Campeonato Brasileiro Serie A</h2>
+        <h2>Campeonato Brasileiro Serie A</h2>
       </HeaderLogo>
       <HeaderButtons>
         <div>
-        {localStorage.getItem('token') ? (
-          <button
-            onClick={() => {
-              navigate('/cadastrartimeserieA');
-            }}
-          >
-            Cadastrar Time
-          </button>
+          {localStorage.getItem('token') ? (
+            <button
+              onClick={() => {
+                navigate('/cadastrartimeserieA');
+              }}
+            >
+              Cadastrar Time
+            </button>
           ) : null}
         </div>
       </HeaderButtons>

@@ -1,12 +1,8 @@
-import { Link, useNavigate } from "react-router-dom";
-import {
-  HeaderButtons,
-  HeaderComponent,
-  HeaderLogo,
-} from "./style";
+import { Link, useNavigate } from 'react-router-dom';
+import { HeaderButtons, HeaderComponent, HeaderLogo } from './style';
 
 export function Header() {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <HeaderComponent>
@@ -18,22 +14,52 @@ export function Header() {
       </HeaderLogo>
       <HeaderButtons>
         <div>
-        <button onClick={() => {navigate("/seriea");}}>Serie A</button>
+          <button
+            onClick={() => {
+              navigate('/seriea');
+            }}
+          >
+            Serie A
+          </button>
         </div>
         <div>
-        <button onClick={() => {navigate("/serieb");}}>Serie B</button>
+          <button
+            onClick={() => {
+              navigate('/serieb');
+            }}
+          >
+            Serie B
+          </button>
         </div>
         <div>
-        <button onClick={() => {navigate("/seriec");}}>Serie C</button>
+          <button
+            onClick={() => {
+              navigate('/seriec');
+            }}
+          >
+            Serie C
+          </button>
         </div>
         <div>
-        <button onClick={() => {navigate("/seried");}}>Serie D</button>
+          <button
+            onClick={() => {
+              navigate('/seried');
+            }}
+          >
+            Serie D
+          </button>
         </div>
         <div>
-        <button onClick={() => {navigate("/login");}}>Login</button>
+          <button
+            onClick={() => {
+              navigate('/login');
+            }}
+          >
+            Login
+          </button>
         </div>
         <div>
-        {localStorage.getItem('token') ? (
+          {localStorage.getItem('token') ? (
             <button
               onClick={() => {
                 localStorage.removeItem('token');

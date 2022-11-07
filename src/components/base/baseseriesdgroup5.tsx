@@ -9,8 +9,12 @@ export function BaseSeriesDGroup5() {
     <HeaderComponent>
       <HeaderButtons>
         <div>
-          <button onClick={() => { navigate('/seried'); }} >
-            <TiArrowBack color='red' fontSize={30}/>
+          <button
+            onClick={() => {
+              navigate('/seried');
+            }}
+          >
+            <TiArrowBack color="red" fontSize={30} />
           </button>
         </div>
       </HeaderButtons>

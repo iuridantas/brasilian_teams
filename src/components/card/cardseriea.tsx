@@ -52,12 +52,12 @@ export function Card({
 
   return (
     <CardSection>
-        <h2>{name}</h2>
-        <img src={shield} alt={name} height="100" width="100"></img>
-        <h3>Fundação: {foundation}</h3>
-        <h3>Mascote: {mascot}</h3>
-        <h3>Localização: {localization}</h3>
-        <ButtonsDiv>
+      <h2>{name}</h2>
+      <img src={shield} alt={name} height="100" width="100"></img>
+      <h3>Fundação: {foundation}</h3>
+      <h3>Mascote: {mascot}</h3>
+      <h3>Localização: {localization}</h3>
+      <ButtonsDiv>
         {localStorage.getItem('token') ? (
           <Buttons
             color="blue"
@@ -67,13 +67,13 @@ export function Card({
           >
             Editar
           </Buttons>
-          ) : null}
-           {localStorage.getItem('token') ? (
+        ) : null}
+        {localStorage.getItem('token') ? (
           <Buttons color="red" onClick={DeleteCard}>
             Deletar
           </Buttons>
-          ) : null}
-        </ButtonsDiv>
+        ) : null}
+      </ButtonsDiv>
     </CardSection>
   );
 }

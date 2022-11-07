@@ -47,7 +47,7 @@ export const ContentDiv = styled.div`
 `;
 
 export const Load = styled.div`
-  h1{
+  h1 {
     font-size: 2rem;
     color: black;
   }

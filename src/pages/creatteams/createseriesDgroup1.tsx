@@ -49,56 +49,56 @@ export function CreateseriesDGroup1() {
 
   return (
     <>
-    {loading ? (
-      <Load>
-        {' '}
-        <h1>loading...</h1>
-      </Load>
-    ) : (
-    <ContentDiv>
-      <h2>{_id ? 'Atualizar Time' : 'Cadastro de Time'}</h2>
-      <form onSubmit={handleSubmit}>
-        <label>Nome do time</label>
-        <input
-          defaultValue={teams?.name}
-          type="text"
-          name="teamsName"
-          required
-        ></input>
-        <label>Ano de fundação</label>
-        <input
-          defaultValue={teams?.foundation}
-          type="number"
-          name="teamsFoundation"
-          required
-        ></input>
-        <label>Link do escudo do time</label>
-        <input
-          defaultValue={teams?.shield}
-          type="text"
-          name="teamsShield"
-          required
-        ></input>
-        <label>Mascote do time</label>
-        <input
-          defaultValue={teams?.mascot}
-          type="text"
-          name="teamsMascot"
-          required
-        ></input>
-        <label>Localização do time</label>
-        <input
-          defaultValue={teams?.localization}
-          type="text"
-          name="teamsLocalization"
-          required
-        ></input>
-        <section>
-          <button type="submit">Enviar</button>
-        </section>
-      </form>
-    </ContentDiv>
+      {loading ? (
+        <Load>
+          {' '}
+          <h1>loading...</h1>
+        </Load>
+      ) : (
+        <ContentDiv>
+          <h2>{_id ? 'Atualizar Time' : 'Cadastro de Time'}</h2>
+          <form onSubmit={handleSubmit}>
+            <label>Nome do time</label>
+            <input
+              defaultValue={teams?.name}
+              type="text"
+              name="teamsName"
+              required
+            ></input>
+            <label>Ano de fundação</label>
+            <input
+              defaultValue={teams?.foundation}
+              type="number"
+              name="teamsFoundation"
+              required
+            ></input>
+            <label>Link do escudo do time</label>
+            <input
+              defaultValue={teams?.shield}
+              type="text"
+              name="teamsShield"
+              required
+            ></input>
+            <label>Mascote do time</label>
+            <input
+              defaultValue={teams?.mascot}
+              type="text"
+              name="teamsMascot"
+              required
+            ></input>
+            <label>Localização do time</label>
+            <input
+              defaultValue={teams?.localization}
+              type="text"
+              name="teamsLocalization"
+              required
+            ></input>
+            <section>
+              <button type="submit">Enviar</button>
+            </section>
+          </form>
+        </ContentDiv>
       )}
-      </>
-    );
-  }
+    </>
+  );
+}

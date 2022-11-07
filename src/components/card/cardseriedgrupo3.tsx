@@ -58,7 +58,7 @@ export function Card({
       <h3>Mascote: {mascot}</h3>
       <h3>Localização: {localization}</h3>
       <ButtonsDiv>
-      {localStorage.getItem('token') ? (
+        {localStorage.getItem('token') ? (
           <Buttons
             color="blue"
             onClick={() => {
@@ -67,12 +67,12 @@ export function Card({
           >
             Editar
           </Buttons>
-          ) : null}
-           {localStorage.getItem('token') ? (
+        ) : null}
+        {localStorage.getItem('token') ? (
           <Buttons color="red" onClick={DeleteCard}>
             Deletar
           </Buttons>
-          ) : null}
+        ) : null}
       </ButtonsDiv>
     </CardSection>
   );

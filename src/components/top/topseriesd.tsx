@@ -7,7 +7,7 @@ export function TopSeriesD() {
   return (
     <HeaderComponent>
       <HeaderLogo>
-          <h2>Campeonato Brasileiro Serie D</h2>
+        <h2>Campeonato Brasileiro Serie D</h2>
       </HeaderLogo>
     </HeaderComponent>
   );

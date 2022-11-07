@@ -7,18 +7,18 @@ export function TopSeriesC() {
   return (
     <HeaderComponent>
       <HeaderLogo>
-          <h2>Campeonato Brasileiro Serie C</h2>
+        <h2>Campeonato Brasileiro Serie C</h2>
       </HeaderLogo>
       <HeaderButtons>
-      <div>
-        {localStorage.getItem('token') ? (
-          <button
-            onClick={() => {
-              navigate('/cadastrartimeserieC');
-            }}
-          >
-            Cadastrar Time
-          </button>
+        <div>
+          {localStorage.getItem('token') ? (
+            <button
+              onClick={() => {
+                navigate('/cadastrartimeserieC');
+              }}
+            >
+              Cadastrar Time
+            </button>
           ) : null}
         </div>
       </HeaderButtons>

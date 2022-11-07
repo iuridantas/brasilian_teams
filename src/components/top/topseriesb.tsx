@@ -7,18 +7,18 @@ export function TopSeriesB() {
   return (
     <HeaderComponent>
       <HeaderLogo>
-          <h2>Campeonato Brasileiro Serie B</h2>
+        <h2>Campeonato Brasileiro Serie B</h2>
       </HeaderLogo>
       <HeaderButtons>
-      <div>
-        {localStorage.getItem('token') ? (
-          <button
-            onClick={() => {
-              navigate('/cadastrartimeserieB');
-            }}
-          >
-            Cadastrar Time
-          </button>
+        <div>
+          {localStorage.getItem('token') ? (
+            <button
+              onClick={() => {
+                navigate('/cadastrartimeserieB');
+              }}
+            >
+              Cadastrar Time
+            </button>
           ) : null}
         </div>
       </HeaderButtons>
