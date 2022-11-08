@@ -14,7 +14,7 @@ export function BaseSeriesDGroup6() {
               navigate('/seried');
             }}
           >
-            <TiArrowBack color="red" fontSize={30} />
+            <TiArrowBack color="black" fontSize={30} />
           </button>
         </div>
       </HeaderButtons>

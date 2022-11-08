@@ -14,10 +14,9 @@ export const HeaderButtons = styled.section`
   align-items: center;
   button {
     border: none;
-    border-radius: 10px;
-    /* font-size: 20px; */
+    border-radius: 100px;
     cursor: pointer;
-    background-color: rgba(192, 192, 192);
+    background-color: transparent;
     padding: 10px;
     color: white;
     margin: 0px 5px 0px 5px;

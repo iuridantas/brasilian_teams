@@ -10,7 +10,7 @@ export const CardDiv = styled.div`
   div {
     display: flex;
     margin: 2% 10% 2% 10%;
-    background: linear-gradient(45deg, #00000038, transparent);
+    background: linear-gradient(45deg,#ffffff57,transparent);
   }
   img {
     width: 300px;
@@ -29,7 +29,7 @@ export const CardDiv1 = styled.div`
   div {
     display: flex;
     margin: 2% 1% 2% 1%;
-    background: linear-gradient(45deg, #00000038, transparent);
+    background: linear-gradient(45deg,#ffffff57,transparent);
   }
   img {
     width: 300px;

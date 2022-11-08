@@ -14,7 +14,7 @@ export function BaseSeriesC() {
               navigate('/');
             }}
           >
-            <TiArrowBack color="red" fontSize={30} />
+            <TiArrowBack color="black" fontSize={30} />
           </button>
         </div>
       </HeaderButtons>

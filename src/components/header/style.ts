@@ -23,6 +23,7 @@ export const HeaderLogo = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
+    color: black;
   }
 `;
 
@@ -34,9 +35,13 @@ export const HeaderButtons = styled.section`
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    background-color: rgba(207, 181, 59, 0.6);
+    background-color: rgb(20 18 8 / 50%);
     padding: 10px;
     color: white;
     margin: 0px 5px 0px 5px;
+    :hover {
+      background-color: white;
+      color: black;
+    }
   }
 `;

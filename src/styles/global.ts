@@ -22,7 +22,7 @@ export default createGlobalStyle`
     }
 
     body {
-        background-color: rgba(207,181,59, 0.6);
+        background-color: rgb(20 18 8 / 50%);
         color: #FFFF
     }
     

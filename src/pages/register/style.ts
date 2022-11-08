@@ -6,9 +6,11 @@ export const RegisterSection = styled.section`
   justify-content: center;
   width: 50%;
   height: 100%;
+  color: black;
   form {
     display: flex;
     min-width: 300px;
+    color: black;
     flex-direction: column;
     margin-top: 15px;
   }
@@ -33,7 +35,7 @@ export const PasswordDiv = styled.div`
     display: flex;
     background-color: white;
     border: none;
-    border-radius: 8px 0px 0px 8px !important;
+    border-radius: 0px 8px 8px 0px !important;
     height: 1.6rem;
     justify-content: center;
     align-items: center;

@@ -6,10 +6,11 @@ export const CardSection = styled.section`
   align-items: center;
   width: 30%;
   height: 60%;
-  border: 1px solid white;
+  border: 4px solid black;
   border-radius: 15px;
   margin: 2% 1% 2% 1%;
-  background: linear-gradient(45deg, black, transparent);
+  background: linear-gradient(45deg,#ffffff57,transparent);
+  color: black;
   h2 {
     font-size: 1.3rem;
   }

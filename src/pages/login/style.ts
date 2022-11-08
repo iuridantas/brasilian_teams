@@ -9,6 +9,7 @@ export const LoginSection = styled.section`
     min-width: 300px;
     flex-direction: column;
     margin-top: 15px;
+    color: black;
   }
   input {
     border-radius: 8px;
@@ -31,7 +32,7 @@ export const PasswordDiv = styled.div`
     display: flex;
     background-color: white;
     border: none;
-    border-radius: 8px 0px 0px 8px !important;
+    border-radius: 0px 8px 8px 0px !important;
     height: 1.6rem;
     justify-content: center;
     align-items: center;
